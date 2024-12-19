@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/min.css' %}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="container-fluid">
+            <h2 class="text-center alert alert-danger">Function Based View ModelForm CRUD Project</h2>
+
+            {% block content %} {% endblock content %}
+
+
+        </div>
+    </div>
+    <script src="{% static 'js/bundlemin.js'%}"></script>
+    <script src="{% static 'js/poppermin.js'%}"></script>
+    
+</body>
+</html>
